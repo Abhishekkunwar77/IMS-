@@ -13,6 +13,8 @@ cloudinary.config({
   api_secret: process.env.API_SECRET,
 });
 
+
+
 router.post("/signup", (req, res) => {
   User.find({ email: req.body.email }).then((users) => {
     if (users.length > 0) {

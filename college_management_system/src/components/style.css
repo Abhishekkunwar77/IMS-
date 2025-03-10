@@ -7,6 +7,7 @@
   align-items: center;
   justify-content: center;
 }
+
 .signup-box {
   width: 80%;
   height: 80vh;
@@ -140,10 +141,12 @@ select {
   background-color: rgb(255, 255, 255);
   border-radius: 50%;
   overflow: hidden;
+
 }
 .profile-logo {
   width: 50px;
   height: 50px;
+  object-fit: cover;
 }
 .profile-container {
   display: flex;
@@ -152,19 +155,30 @@ select {
 }
 .profile-name {
   font-size: 18px;
-}
+  font-weight: bold;
+  color: #ffffff;
+  }
 .logout-btn {
-  background-color: #ff0000;
+  height:25px;
+  background-color: #b52e2e;
   color: white;
   width: fit-content;
   padding: 5px;
   border-radius: 5px;
   cursor: pointer;
+  text-align: center;
+  margin-top: 5px;
+  margin-left:100px;
+}
+.logout-btn:hover{
+    transition: 0.5s;
+  transform: scale(1.1);
+    background-color: #fc0000;
+
 }
 .brand-container {
   display: flex;
   height: 100px;
-  /* background-color: red; */
   align-items: center;
   gap: 10px;
 }
@@ -212,11 +226,7 @@ select {
   margin-right: 10px !important;
 }
 
-.contact-us {
-  position: absolute;
-  bottom: 5vh;
-  color: wheat;
-}
+
 
 /*main container*/
 .outlet-area {
@@ -298,7 +308,7 @@ select {
   gap: 5%;
   text-transform: capitalize;
   height: 30vh;
-  overflow: auto;
+  overflow: hidden;
 }
 ::-webkit-scrollbar,
 .table-container-home::-webkit-scrollbar {
@@ -328,6 +338,7 @@ select {
 table {
   width: 100%;
   border-collapse: collapse;
+
 }
 .student-profile-pic {
   width: 70px;
@@ -511,4 +522,61 @@ th {
   font-weight: bold;
 }
 
-/* table home container home page*/
+/* social media added*/
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  padding: 10px 0;
+  margin-top: -10px;
+
+}
+
+.social-links a {
+  color: white;
+  font-size: 22px;
+  transition: color 0.3s ease-in-out;
+  transition: 0.3s;
+}
+
+.social-links a:hover {
+  color: green;
+  transform: scale(1.4);
+}
+
+.stay-connected-message {
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  color: #ffffff;
+  margin-top: 20px;
+  padding: 5px;
+  background-color: #007bff; 
+  border-radius: 5px;
+}
+.current-datetime {
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #007bff; 
+  padding: 5px;
+  border-radius: 5px;
+  margin-top: 90px;
+}
+
+.home-table-container tbody td{
+  padding: 10px;
+  text-overflow: ellipsis; 
+  white-space: nowrap;
+  overflow-x: hidden;
+  max-width:150px;
+
+}
+.home-student-table tbody td p {
+  padding: 10px;
+  text-overflow: ellipsis; 
+  white-space: nowrap;
+  overflow-x: hidden;
+  max-width:125px;
+}

@@ -66,7 +66,7 @@ const Home = () => {
                     <td>{payment.fullName}</td>
                     <td>{payment.createdAt}</td>
                     <td>{payment.amount}</td>
-                    <td>{payment.remark}</td>
+                    <td className="remark">{payment.remark}</td>
                   </tr>
                 ))}
               </tbody>
@@ -76,43 +76,42 @@ const Home = () => {
           )}
         </div>
         <div className="table-container-home">
-          {
-            fees.length > 0 ? 
-          
-          <table className="home-student-table">
-            <thead>
-              <tr>
-                <th>Image</th>
-                <th>Full Name</th>
-                <th>Phone</th>
-                <th>Email</th>
-              </tr>
-            </thead>
-            <tbody>
-              {students.map((student) => (
-                <tr key={student._id} className="student-row">
-                  <td>
-                    <img
-                      className="student-profile-pic"
-                      src={student.imageUrl}
-                      alt="students-image"
-                    />
-                  </td>
-                  <td>
-                    <p>{student.fullName}</p>
-                  </td>
-                  <td>
-                    <p>{student.phone}</p>
-                  </td>
-                  <td>
-                    <p>{student.email}</p>
-                  </td>
+          {fees.length > 0 ? (
+            <table className="home-student-table">
+              <thead>
+                <tr>
+                  <th>Image</th>
+                  <th>Full Name</th>
+                  <th>Phone</th>
+                  <th>Email</th>
                 </tr>
-              ))}
-            </tbody>
-          </table>
-: <p>No Fees Data Available</p>
-            }
+              </thead>
+              <tbody>
+                {students.map((student) => (
+                  <tr key={student._id} className="student-row">
+                    <td>
+                      <img
+                        className="student-profile-pic"
+                        src={student.imageUrl}
+                        alt="students-image"
+                      />
+                    </td>
+                    <td>
+                      <p>{student.fullName}</p>
+                    </td>
+                    <td>
+                      <p>{student.phone}</p>
+                    </td>
+                    <td>
+                      <p>{student.email}</p>
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          ) : (
+            <p>No Fees Data Available</p>
+          )}
         </div>
       </div>
     </div>
