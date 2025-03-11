@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "../components/style.css";
 import { Link, useLocation } from "react-router-dom";
-
+import logo from "../assets/logo.jpg";
 const SideNav = () => {
   const location = useLocation();
   const [currentDateTime, setCurrentDateTime] = useState(new Date());
@@ -19,7 +19,7 @@ const SideNav = () => {
       <div className="brand-container">
         <img
           className="profile-logo"
-          src={require("../assets/clg-logo.png")}
+          src={logo}
           alt="brand-container"
         />
         <div>

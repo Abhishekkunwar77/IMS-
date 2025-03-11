@@ -86,6 +86,7 @@ const CourseDetail = () => {
           </div>
         </div>
       )}
+      <hr className="hrline" />
       {studentList && studentList.length > 0 && (
         <div className="studentList-container">
           <table>

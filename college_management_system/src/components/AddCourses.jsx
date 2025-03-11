@@ -128,7 +128,7 @@ const AddCourses = () => {
             setStartingDate(e.target.value);
           }}
           type="text"
-          placeholder="Starting Date"
+          placeholder="Starting Date (YYYY-MM-DD)"
           required
         />
         <input
@@ -137,7 +137,7 @@ const AddCourses = () => {
             setEndDate(e.target.value);
           }}
           type="text"
-          placeholder="End Date"
+          placeholder="End Date (YYYY-MM-DD)"
           required
         />
         <input onChange={fileHandler} type="file" required={!location.state} />

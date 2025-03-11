@@ -40,7 +40,7 @@ const PaymentHistory = () => {
               <tr key={payment._id}>
                 <td>{payment.fullName}</td>
                 <td>{payment.createdAt}</td>
-                <td>{payment.amount}</td>
+                <td className='amount'>{payment.amount}</td>
                 <td>{payment.remark}</td>
               </tr>
             ))}
