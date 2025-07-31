@@ -48,7 +48,7 @@ const fileHandler=(e)=>{
       <div className="signup-box">
         <div className="signup-left">
           <img src={require("../assets/books.png")} alt="" />
-          <h1 className="signup-left-heading">College Management System</h1>
+          <h1 className="signup-left-heading">Campus360</h1>
           <p className="signup-left-para">
             Your Journey to Excellence Starts Here!
           </p>
